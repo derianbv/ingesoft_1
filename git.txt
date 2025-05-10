@@ -1,4 +1,12 @@
+EPP La idea de GIT es que tienes un puntero * (HEAD) que te dice en que parte del repositorio estas,  entonces, puedes irte moviendote entre branches con git checkout branch y hacerles commits que harán que esa rama crezca, luego los peuedes unir con git merge 
+
 Branching en Linux: 
 
 1. Crear rama y cambiar de rama: 
 git checkout -b [yourbranchname]
+estando en la rama: git branch. 
+
+2. Cambiar de rama: 
+git checkout rama 
+git switch rama 
+
