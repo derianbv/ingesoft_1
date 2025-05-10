@@ -1,0 +1,4 @@
+Branching en Linux: 
+
+1. Crear rama y cambiar de rama: 
+git checkout -b [yourbranchname]
