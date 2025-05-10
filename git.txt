@@ -16,6 +16,9 @@ A---B---C---D  (main)
         ↑
       HEAD
 Todo los commits que haga se pondran en C. 
+Esto es un DETACHED HEAD> que estoy es parado sobre un commit y no sobre una rama. 
 
 Ahora, si quiero subir a la versión anterior, entonces debo poner reative refs: 
 git checkout ^rama (igual a HEAD~1), o ^^rama que es igual que HEAD~2 , para ir a sus dos padres. 
+
+
