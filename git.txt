@@ -1,4 +1,4 @@
-EPP La idea de GIT es que tienes un puntero * (HEAD) que te dice en que parte del repositorio estas,  entonces, puedes irte moviendote entre branches con git checkout branch y hacerles commits que harán que esa rama crezca, luego los peuedes unir con git merge 
+EPP La idea de GIT es que tienes un puntero * (HEAD) que te dice en que parte del repositorio estas,  entonces, puedes irte moviendote entre branches con git checkout branch y hacerles commits que harán que esa rama crezca, luego los peuedes unir con git merge: voy a la rama que le quiero pasar las cosas con git checkout main, y luego ahi git merge otraRama
 
 Branching en Linux: 
 
