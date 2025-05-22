@@ -1,7 +1,13 @@
 Link de patrones: https://refactoring.guru/es 
 
  ********************* PATRONES DE DISEÑO ********************************
-Solucionan problemas comunes, no se crearon, sino se descubrieron
+Solucionan problemas comunes, no se crearon, sino se descubrieron, es importante leer una vez todos los patrones al menos una vez en la vida.
+
+Tipos: 
+a. Creacionales: proporcionan mecanismos para crear objetos
+b. Estructurales: 
+c. comportamentales: 
+
 
 1. Singleton: 
 
