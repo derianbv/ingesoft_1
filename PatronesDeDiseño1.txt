@@ -2,6 +2,7 @@ Link de patrones: https://refactoring.guru/es
 
  ********************* PATRONES DE DISEÑO ********************************
 Solucionan problemas comunes, no se crearon, sino se descubrieron, es importante leer una vez todos los patrones al menos una vez en la vida.
+Es decir, cuando necesitamos que4 una clase que solo sea instanciada una vez, en vez de crear nuevas instancias entonces vamos es a llamar aa esa clase.
 
 Tipos: 
 a. Creacionales: proporcionan mecanismos para crear objetos
