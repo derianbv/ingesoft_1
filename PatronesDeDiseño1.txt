@@ -1,5 +1,8 @@
 Link de patrones: https://refactoring.guru/es 
 
+ ********************* PATRONES DE DISEÑO ********************************
+Solucionan problemas comunes, no se crearon, sino se descubrieron
+
 1. Singleton: 
 
 
