@@ -1,3 +1,5 @@
+Link de patrones: https://refactoring.guru/es 
+
 1. Singleton: 
 
 
