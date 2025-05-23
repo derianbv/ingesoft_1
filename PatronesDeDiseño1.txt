@@ -13,4 +13,6 @@ c. comportamentales:
 1. Singleton: 
 Si quiero un nuevo objeto que ya esta instanciado entonces lo voy a es a referenciar su espacio en memoria, mas que crear otro nuevo. (única instancia). 
 
-2. Observer: 
+2. Builder:  
+Es para que sea facil crear una nueva clase, entonces se crea la clase y una clase creadora que la maneje a su antojo 
+
