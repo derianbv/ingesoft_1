@@ -1,4 +1,6 @@
-Link de patrones: https://refactoring.guru/es 
+Link de patrones: 
+https://refactoring.guru/es 
+
 
  ********************* PATRONES DE DISEÑO ********************************
 Solucionan problemas comunes, no se crearon, sino se descubrieron, es importante leer una vez todos los patrones al menos una vez en la vida.
