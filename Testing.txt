@@ -4,3 +4,11 @@ Estático es cuando no se ejecuta el código.
 Dinámico cuando se ejecuta se prueba el codigo.  
 
 Los test son como la prueba del códido para cuando voy a entregarle la aplicación al cliente :) 
+
+
+TIPOS -------------------------------------------------------
+1. Caja blaca: conocemos el código. 
+2. Caja negra: no conocemos el código.
+3. Caja gris: más o menos. 
+n.1: Funcional. 
+n.2: No funcional. 
