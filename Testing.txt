@@ -12,3 +12,6 @@ TIPOS -------------------------------------------------------
 3. Caja gris: más o menos. 
 n.1: Funcional. 
 n.2: No funcional. 
+
+
+UNITARIO, TEST UI Y 
