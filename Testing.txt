@@ -14,4 +14,4 @@ n.1: Funcional.
 n.2: No funcional. 
 
 
-UNITARIO, TEST UI Y 
+UNITARIO, TEST UI E Integracion. 
