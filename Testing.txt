@@ -1,1 +1,4 @@
+Dinamico y estático: 
 
+Estático es cuando no se ejecuta el código. 
+Dinámico cuando se ejecuta se prueba el codigo.  
