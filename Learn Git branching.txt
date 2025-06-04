@@ -1,1 +1,3 @@
-Level 1: 
+Level 1: ----------------------------------------------------------------------------------
+-Los commits son snapshots del archivo en ese instante. 
+-Los commits se guardan en el historial de commits.
