@@ -1,3 +1,10 @@
 Level 1: ----------------------------------------------------------------------------------
 -Los commits son snapshots del archivo en ese instante. 
 -Los commits se guardan en el historial de commits.
+-Las branches son solo punteros a commits especificos: 
+
+CÓMO FUNCIONA GIT: 
+0. COMMITS: Son checkpoints en el documento que registran el estado actual de todos los documentos del repositorio (Como ir guardando el proyecto). 
+Cuando realizo nuevos commits entonces voy a ir creando un historial de checkpoints A -- B -- C. 
+
+1. BRANCH: Cuando creo una brech es simplemente un puntero a un Commit en especifico. 
