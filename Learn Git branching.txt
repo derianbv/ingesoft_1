@@ -8,3 +8,24 @@ CÓMO FUNCIONA GIT:
 Cuando realizo nuevos commits entonces voy a ir creando un historial de checkpoints A -- B -- C. 
 
 1. BRANCH: Cuando creo una brech es simplemente un puntero a un Commit en especifico. 
+1.1. A -- B -- C (Main, Head) Acá estamos trabajando con la branch Main que es un puntero que apunta al último commit, si yo creo un nuevo commit con "git commit" entonces le hago un snapshot y el historial crece en el sentido en donde apunte HEAD. 
+
+A -- B -- c (MAIN, HEAD) -> git commit -> A -- B -- C -- D (MAIN*). Luego, si creo una nueva branch ("git branch jose") significa que hay dos punteros apuntando a C: A -- B -- C -- D (MAIN*, jose).
+
+1.2. HEAD ("*"): Head es un puntero que apunta a branches: HEAD -> branch1 -> Commit 4. Esto indica hacia cual de las ramas va a crecer el historial  
+C: A -- B -- C -- D (MAIN*, jose)
+
+-EJEMPLO:
+
+[commit A] ← [commit B] ← [commit C] ← Main* 
+                                     ↑
+                                   jose
+
+Cambiar de rama: "git checkout jose": 
+
+
+[commit A] ← [commit B] ← [commit C] ← Main 
+                                     ↑
+                                   jose*
+
+Ahora HEAD apunta a la rama jose y los nuevos commits irán en esa dirección: 
