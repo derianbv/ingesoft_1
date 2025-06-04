@@ -60,5 +60,28 @@ C1 -- C2 -- C3 -------- C6 <-(main)*
           \             /
            C4 -- C5 <-(funcion1)
 
-3.2 QUE PASA SI VUELVO A UN PUNTERO BRANCH QUE YA FUE MERGEADO 
 
+3.2 "¿Qué pasa si regreso a una rama que ya fue mergeada, pero que no se movió después del merge (sigue apuntando a su último commit anterior al merge)?": 
+
+"git checkout funcion1" (que pasa el HEAD a funcion1): 
+
+C1 -- C2 -- C3 -------- C6 <-(main)
+          \             /
+           C4 -- C5 <-(funcion1)*
+
+
+
+Y hago un "git commit" creando un nuevo C7 en la línea de funcion1: 
+
+C1 -- C2 -- C3 -------- C6 <-(main)
+          \             /
+           C4 ------  C5 -- C7 <-(funcion1)*
+
+
+
+
+y si creo tres más queda algo así: 
+
+C1 -- C2 -- C3 -------- C6 <-(main)
+          \             /
+           C4 -- C5 -- C7 -- C8 -- C9 -- C10 <-(funcion1)*
