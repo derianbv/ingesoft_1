@@ -38,7 +38,8 @@ git commit -m "nuevo cambio"
 
 
 Level 3: ----------------------------------------------------------------------------------
-3.1: MERGE:  SUMA DE LOS COMMITES QUE APUNTAN LAS RAMAS MEZCLADAS: basicamente que  git merge rama1 (desde main) hace un C_rama1 + C_main para crear un C_n+1 que suma los codigos (el texto interno) de  C_rama1 + C_main y mueve el puntero brach que tenga el head hacia este C_n+1. ES DECIR, MERGE HACE UN COMMIT AUTOMÁTICO. 
+3.0: Hay dos merge:  🔹1. Merge con commit automático (la mayoría de los casos), 🔹 2. Fast-forward merge (sin nuevo commit)
+3.1: MERGE con commit automático:  SUMA DE LOS COMMITES QUE APUNTAN LAS RAMAS MEZCLADAS: basicamente que  git merge rama1 (desde main) hace un C_rama1 + C_main para crear un C_n+1 que suma los codigos (el texto interno) de  C_rama1 + C_main y mueve el puntero brach que tenga el head hacia este C_n+1. ES DECIR, MERGE HACE UN COMMIT AUTOMÁTICO. 
 
 EJEMPLO: 
 -Tengo dos branches, main y funcion1, en funcion1 he hecho dos commits extra (C4, C5), me debo pasar a main con checkout y usar git merge funcion1 para crear un nuevo commit que tenga dos commits padres, funcion1 sigue apunto a C5 y main apunta a C6.
