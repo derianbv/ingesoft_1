@@ -4,15 +4,15 @@ Level 1: -----------------------------------------------------------------------
 -Las branches son solo punteros a commits especificos: 
 
 CÓMO FUNCIONA GIT: 
-0. COMMITS: Son checkpoints en el documento que registran el estado actual de todos los documentos del repositorio (Como ir guardando el proyecto). 
+0. COMMITS (Checkpoint): Son checkpoints en el documento que registran el estado actual de todos los documentos del repositorio (Como ir guardando el proyecto). 
 Cuando realizo nuevos commits entonces voy a ir creando un historial de checkpoints A -- B -- C, en realidad van con C: C1 -- C2 -- C3 -- C_n 
 
-1. BRANCH: Cuando creo una brech es simplemente un puntero a un Commit en especifico. 
+1. BRANCH (Puntero a Checkpoint): Cuando creo una brech es simplemente un puntero a un Commit en especifico. 
 1.1. A -- B -- C (Main, Head) Acá estamos trabajando con la branch Main que es un puntero que apunta al último commit, si yo creo un nuevo commit con "git commit" entonces le hago un snapshot y el historial crece en el sentido en donde apunte HEAD. 
 
 A -- B -- c (MAIN, HEAD) -> git commit -> A -- B -- C -- D (MAIN*). Luego, si creo una nueva branch ("git branch jose") significa que hay dos punteros apuntando a C: A -- B -- C -- D (MAIN*, jose).
 
-1.2. HEAD ("*"): Head es un puntero que apunta a branches: HEAD -> branch1 -> Commit 4. Esto indica hacia cual de las ramas va a crecer el historial  
+1.2. HEAD ("*", Puntero a puntero rama): Head es un puntero que apunta a branches: HEAD -> branch1 -> Commit 4. Esto indica hacia cual de las ramas va a crecer el historial  
 C: A -- B -- C -- D (MAIN*, jose)
 
 -EJEMPLO:
@@ -35,5 +35,30 @@ git commit -m "nuevo cambio"
 [commit A] ← [commit B] ← [commit C] ← main
                                       \
                                        [commit D] ← jose* 
-                                                  
+
+
+Level 3: ----------------------------------------------------------------------------------
+3.1: MERGE:  SUMA DE LOS COMMITES QUE APUNTAN LAS RAMAS MEZCLADAS: basicamente que  git merge rama1 (desde main) hace un C_rama1 + C_main para crear un C_n+1 que suma los codigos (el texto interno) de  C_rama1 + C_main y mueve el puntero brach que tenga el head hacia este C_n+1
+
+EJEMPLO: 
+-Tengo dos branches, main y funcion1, en funcion1 he hecho dos commits extra (C4, C5), me debo pasar a main con checkout y usar git merge funcion1 para crear un nuevo commit que tenga dos commits padres, funcion1 sigue apunto a C5 y main apunta a C6.
+Es decir, "git merge rama1" 
+
+C1 -- C2 -- C3 <- (main)
+            \
+             C4 -- C5 <- (funcion1)*
+
+-"git checkout main" (Mueve el HEAD al puntero main): 
+
+C1 -- C2 -- C3 <- (main)*
+            \
+             C4 -- C5 <-(funcion1)
+
+-"git merge funcion1" crea un nuevo commit que es la suma de los últimos commits de ambas ramas (C3 de main + C5 de function = C6 de main), main avanza al C6 porque es el que tenía el HEAD. El puntero branch mergeado solo mergea su commit más no mueve su puntero, es decir, en el ejemplo, funcion1 va a seguir apuntando a C5 que fue su último commit. 
+
+C1 -- C2 -- C3 -------- C6 <-(main)*
+          \             /
+           C4 -- C5 <-(funcion1)
+
+3.2 QUE PASA SI VUELVO A UN PUNTERO BRANCH QUE YA FUE MERGEADO 
 
