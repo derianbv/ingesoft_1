@@ -5,7 +5,7 @@ Level 1: -----------------------------------------------------------------------
 
 CÓMO FUNCIONA GIT: 
 0. COMMITS: Son checkpoints en el documento que registran el estado actual de todos los documentos del repositorio (Como ir guardando el proyecto). 
-Cuando realizo nuevos commits entonces voy a ir creando un historial de checkpoints A -- B -- C. 
+Cuando realizo nuevos commits entonces voy a ir creando un historial de checkpoints A -- B -- C, en realidad van con C: C1 -- C2 -- C3 -- C_n 
 
 1. BRANCH: Cuando creo una brech es simplemente un puntero a un Commit en especifico. 
 1.1. A -- B -- C (Main, Head) Acá estamos trabajando con la branch Main que es un puntero que apunta al último commit, si yo creo un nuevo commit con "git commit" entonces le hago un snapshot y el historial crece en el sentido en donde apunte HEAD. 
@@ -29,3 +29,11 @@ Cambiar de rama: "git checkout jose":
                                    jose*
 
 Ahora HEAD apunta a la rama jose y los nuevos commits irán en esa dirección: 
+
+git commit -m "nuevo cambio"
+
+[commit A] ← [commit B] ← [commit C] ← main
+                                      \
+                                       [commit D] ← jose* 
+                                                  
+
