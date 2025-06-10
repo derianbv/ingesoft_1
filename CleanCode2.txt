@@ -13,3 +13,4 @@ Tests : características:
 
 Buenas prácticas ------------------------------------------------------
 1. Evitar bucles anidados (2 for es mucho, y 3 es inaceptable). 
+2. No utilizar muchas condiciones en una comprobacion, "if not and and and if not in" en una sola frase
