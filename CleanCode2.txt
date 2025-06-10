@@ -12,5 +12,7 @@ Tests : características:
 
 
 Buenas prácticas ------------------------------------------------------
-1. Evitar bucles anidados (2 for es mucho, y 3 es inaceptable). 
-2. No utilizar muchas condiciones en una comprobacion, "if not and and and if not in" en una sola frase
+1. Evitar bucles anidados (2 for es mucho, y 3 es inaceptable) -> reducir complejidad.
+2. No utilizar muchas condiciones en una comprobacion, "if not and and and if not in" en una sola frase -> dividirlo en frase 
+3. Nombre de variables más claro -> x -> numero_Casas. 
+4. En una función divirla por partes, no solo todo el chorrero de código que tiene por dentro. -> #Variables, #Cálculo 
