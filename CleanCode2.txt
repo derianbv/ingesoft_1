@@ -16,3 +16,5 @@ Buenas prácticas ------------------------------------------------------
 2. No utilizar muchas condiciones en una comprobacion, "if not and and and if not in" en una sola frase -> dividirlo en frase 
 3. Nombre de variables más claro -> x -> numero_Casas. 
 4. En una función divirla por partes, no solo todo el chorrero de código que tiene por dentro. -> #Variables, #Cálculo 
+5. Las funciones no deberían hacer mucho, si lo que tiene por dentro hace mucho entonces deberíamos crear nuevas funciones para llamar. 
+6. Si necesito muchos comentarios para explicar mi código entonces no está bien, es mejor que las funciones y las variables expliquen y si ya hay algo muy raro entonces ahí sí va un comentario.
