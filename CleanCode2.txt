@@ -19,3 +19,4 @@ Buenas prácticas ------------------------------------------------------
 7. Mantener el mismo formato para todas las funciones y variables (espacio, llamar variables). 
 8. No poner muchos ifs anidados. 
 9. Leer y re leer el código, evitar prueba error sino leer siempre el código mucho. 
+10. Evitar código demasiado complejo para leer. 
