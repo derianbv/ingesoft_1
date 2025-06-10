@@ -18,3 +18,4 @@ Buenas prácticas ------------------------------------------------------
 6. Si necesito muchos comentarios para explicar mi código entonces no está bien, es mejor que las funciones y las variables expliquen y si ya hay algo muy raro entonces ahí sí va un comentario.
 7. Mantener el mismo formato para todas las funciones y variables (espacio, llamar variables). 
 8. No poner muchos ifs anidados. 
+9. Leer y re leer el código, evitar prueba error sino leer siempre el código mucho. 
