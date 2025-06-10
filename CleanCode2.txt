@@ -7,3 +7,9 @@ Tests : características:
 3. REPETEABLE: Se puede repetir en todas partes. 
 4. SELF VALIDATES: Los test solo deberían devolver verdadero o falso de los test nada más. 
 6. TIMELY: Testear siempre que sea posible (oportunamente). 
+
+
+
+
+Buenas prácticas ------------------------------------------------------
+1. Evitar bucles anidados (2 for es mucho, y 3 es inaceptable). 
