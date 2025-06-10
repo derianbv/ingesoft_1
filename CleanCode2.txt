@@ -9,8 +9,6 @@ Tests : características:
 6. TIMELY: Testear siempre que sea posible (oportunamente). 
 
 
-
-
 Buenas prácticas ------------------------------------------------------
 1. Evitar bucles anidados (2 for es mucho, y 3 es inaceptable) -> reducir complejidad.
 2. No utilizar muchas condiciones en una comprobacion, "if not and and and if not in" en una sola frase -> dividirlo en frase 
