@@ -1,3 +1,9 @@
 ******************************************** CLEAN CODE 2 ***************************************************************************
 
 First--------------------------------------------------------------------
+Tests : características: 
+1. FAST: Los test deben ser rápidos. 
+2. INDEPENDENT: Los test no deben afectar otro test (independientes). 
+3. REPETEABLE: Se puede repetir en todas partes. 
+4. SELF VALIDATES: Los test solo deberían devolver verdadero o falso de los test nada más. 
+6. TIMELY: Testear siempre que sea posible (oportunamente). 
