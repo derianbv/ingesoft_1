@@ -22,3 +22,4 @@ Buenas prácticas ------------------------------------------------------
 10. Evitar código demasiado complejo para leer. 
 11. crear funciones que returnen un buleano con el valor is  -> is_real() 
 12. Evitar estructuras con indices. usuario[1] X -> usuario["nombre"]
+13. No abusar de los try-catch
