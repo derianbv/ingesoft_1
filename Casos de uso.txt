@@ -1,1 +1,5 @@
-Son basicamente casos que el usuario final experimentaría al usar la aplicación. Es su análisis detallado.
+Son basicamente casos que el usuario final experimentaría al usar la aplicación. Es su análisis detallado. se enfoca en el comportamiento VISIBLE del sistema.
+Tiene 3 elementos necesarios: 
+1. Actor: quien trigerea la acción o interactua con el sistema 
+2. Objetivo. 
+3. Flujo de pasos 
