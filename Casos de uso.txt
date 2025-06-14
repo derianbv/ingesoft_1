@@ -1,1 +1,1 @@
-
+Son basicamente casos que el usuario final experimentaría al usar la aplicación. Es su análisis detallado.
