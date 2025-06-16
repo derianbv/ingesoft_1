@@ -38,7 +38,7 @@ git commit -m "nuevo cambio"
 
 
 Level 3: ----------------------------------------------------------------------------------
-3.0: Hay dos merge:  🔹1. Merge con commit automático (la mayoría de los casos), 🔹 2. Fast-forward merge (sin nuevo commit)
+3.0: Hay dos merge:  1. Merge con commit automático (la mayoría de los casos),  2. Fast-forward merge (sin nuevo commit)
 
 
 
