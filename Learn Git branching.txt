@@ -136,7 +136,11 @@ Lo que hace git es que pone todos los commits de esa rama que está rebasando so
 importan. 
 
 
+El ejemplo anterior da exactamente igual a: 
 
+C1 -- C2 -- C3 -- C6 <-- (main)                           
+              \                                              
+              C4 -- C5 (func1*)    
 
 
 
