@@ -18,8 +18,8 @@ C: A -- B -- C -- D (MAIN*, jose)
 -EJEMPLO:
 
 [commit A] ← [commit B] ← [commit C] ← Main* 
-                                     ↑
-                                   jose
+                             ↑
+                           jose
 
 Cambiar de rama: "git checkout jose": 
 
