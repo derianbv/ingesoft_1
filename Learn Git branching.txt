@@ -1,5 +1,5 @@
-Level 1: ----------------------------------------------------------------------------------
--Los commits son snapshots del archivo en ese instante. 
+eLevel 1: ----------------------------------------------------------------------------------
+-Los commits son snapshots del archivo en ese instante: checkpoints
 -Los commits se guardan en el historial de commits.
 -Las branches son solo punteros a commits especificos: 
 
