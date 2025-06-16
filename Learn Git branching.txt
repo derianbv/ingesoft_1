@@ -128,9 +128,12 @@ si hago:
 "git checkout func1" (pasar HEAD a func1, aunque en el ejemplo ya está) 
 "git rebase main": 
 
-C1 -- C2 -- C3 <-- (main) 
-             \ 
-              C4 -- C5 (func1*) 
+C1 -- C2 -- C3 -- C6 <-- (main)                            C1 -- C2 --- C3 -- C6 -- C4' -- C5' 
+              \                          -->                                   ↑            ↑
+              C4 -- C5 (func1*)                                             (main)       (func1) 
+
+Lo que hace git es que pone todos los commits de esa rama que está rebasando sobre el último commit de la rama rebasada. Estos commits (CN') con apostrofo son copias de los normalitos (CN) que aún existen pero a nadie le 
+importan. 
 
 
 
