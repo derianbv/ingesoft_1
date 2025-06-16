@@ -40,11 +40,7 @@ git commit -m "nuevo cambio"
 Level 3: ----------------------------------------------------------------------------------
 3.0: Hay dos merge:  1. Merge con commit automático (la mayoría de los casos),  2. Fast-forward merge (sin nuevo commit)
 
-MAS SENCILLO DE LO QUE PARECE, SIMPLEMENTE JUNTAR LOS CODIGOS: 
-
-GIT MERGE MAIN 
-
-SIGNIFICA QUE ESTOY EN UNA RAMA_X QUE VA A SALTAR A MAIN. (NO TRAE A MAIN SINO SALTA A MAIN) 
+MAS SENCILLO DE LO QUE PARECE, SIMPLEMENTE JUNTAR LOS CODIGOS Y AVANZAR EN LA BRANCH CON EL HEAD
 
 
 
