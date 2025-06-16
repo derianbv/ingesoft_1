@@ -60,9 +60,9 @@ C1 -- C2 -- C3 <- (main)*
 
 -"git merge funcion1" crea un nuevo commit que es la suma de los últimos commits de ambas ramas (C3 de main + C5 de function = C6 de main), main avanza al C6 porque es el que tenía el HEAD. El puntero branch mergeado solo mergea su commit más no mueve su puntero, es decir, en el ejemplo, funcion1 va a seguir apuntando a C5 que fue su último commit. 
 
-C1 -- C2 -- C3 -------- C6 <-(main)*
-          \             /
-           C4 -------- C5 <-(funcion1)
+C1 -- C2 -- C3 ----------- C6 <-(main)*
+            \             /
+             C4 -------- C5 <-(funcion1)
 
 
 3.2 "¿Qué pasa si regreso a una rama que ya fue mergeada, pero que no se movió después del merge (sigue apuntando a su último commit anterior al merge)?": 
