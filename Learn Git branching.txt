@@ -113,7 +113,7 @@ De este modo podemos seguir con las ramas que queramos, sirve pensarlo como carr
 
 
 Level 4: ------------------------------------------------------------------------------------------------------------------
-REBASE: 
+REBASE: Aparte del merge, puedo juntar los códigos con Rebase
 
 
 
