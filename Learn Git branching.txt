@@ -1,3 +1,4 @@
+
 eLevel 1: ----------------------------------------------------------------------------------
 -Los commits son snapshots del archivo en ese instante: checkpoints
 -Los commits se guardan en el historial de commits.
@@ -115,6 +116,21 @@ De este modo podemos seguir con las ramas que queramos, sirve pensarlo como carr
 Level 4: ------------------------------------------------------------------------------------------------------------------
 REBASE: Aparte del merge, puedo juntar los códigos con Rebase
 
+EPP: Pone los commits que he hecho en una rama x sobre los commits de una rama y a la que le hice rebase. 
+
+EJEMPLO: 
+
+C1 -- C2 -- C3 <-- (main) 
+             \ 
+              C4 -- C5 (func1*) 
+
+si hago: 
+"git checkout func1" (pasar HEAD a func1, aunque en el ejemplo ya está) 
+"git rebase main": 
+
+C1 -- C2 -- C3 <-- (main) 
+             \ 
+              C4 -- C5 (func1*) 
 
 
 
