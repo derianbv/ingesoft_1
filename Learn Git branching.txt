@@ -40,6 +40,12 @@ git commit -m "nuevo cambio"
 Level 3: ----------------------------------------------------------------------------------
 3.0: Hay dos merge:  1. Merge con commit automático (la mayoría de los casos),  2. Fast-forward merge (sin nuevo commit)
 
+MAS SENCILLO DE LO QUE PARECE, SIMPLEMENTE JUNTAR LOS CODIGOS: 
+
+GIT MERGE MAIN 
+
+SIGNIFICA QUE ESTOY EN UNA RAMA_X QUE VA A SALTAR A MAIN. (NO TRAE A MAIN SINO SALTA A MAIN) 
+
 
 
 3.1: MERGE con commit automático **cuelgo al adelantado o a mismo nivel**:  SUMA DE LOS COMMITES QUE APUNTAN LAS RAMAS MEZCLADAS: basicamente que  git merge rama1 (desde main) hace un C_rama1 + C_main para crear un C_n+1 que suma los codigos (el texto interno) de  C_rama1 + C_main y mueve el puntero brach que tenga el head hacia este C_n+1. ES DECIR, MERGE HACE UN COMMIT AUTOMÁTICO. 
