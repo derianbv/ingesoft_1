@@ -62,7 +62,7 @@ C1 -- C2 -- C3 <- (main)*
 
 C1 -- C2 -- C3 -------- C6 <-(main)*
           \             /
-           C4 -- C5 <-(funcion1)
+           C4 -------- C5 <-(funcion1)
 
 
 3.2 "¿Qué pasa si regreso a una rama que ya fue mergeada, pero que no se movió después del merge (sigue apuntando a su último commit anterior al merge)?": 
