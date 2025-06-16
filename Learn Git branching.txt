@@ -109,4 +109,27 @@ C1 -- C2 -- C3 -- C4 -- C5 <-(main, funcion1)*
 
 De este modo podemos seguir con las ramas que queramos, sirve pensarlo como carreteras que se van bifurcando o uniendo en algun punto
 
+
+
+
 Level 4: ------------------------------------------------------------------------------------------------------------------
+REBASE: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
