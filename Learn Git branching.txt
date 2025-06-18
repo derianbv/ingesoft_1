@@ -144,7 +144,14 @@ C1 -- C2 -- C3 -- C6 <-- (main)
               \                                              
               C4 -- C5 (func1*)    
 
+"git merge main": 
 
+
+
+
+C1 -- C2 -- C3 ------- C6 <- (main)                           
+              \          \                                    
+              C4 -- C5 -- C7 <- (func1) 
 
 
 
