@@ -161,7 +161,7 @@ C1 -- C2 -- C3 ------- C6 <- (main)
 En ambos ejemplos C5' ==  C7 
 
 
-Level 5: ------------------------------------------------------------------------------------------------------------------
+Level 5 y 6: ------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -171,7 +171,7 @@ Si es HEAD -> COMMIT:
 
 Sin embargo se pueden usar movimientos re posición relativos: 
 1.  Desatacheo el HEAD de la rama actual para que pase de Ejemplo: main* -> C5* 
-2. Si me quiero mover un Commit hacia atrás ^ o un número de commits en especcífico: ~<n>
+2. Si me quiero mover un Commit hacia atrás ^ o un número de commits en especcífico: ~n
 
 Ejemplo: 
 
@@ -199,6 +199,23 @@ C1 -- C2 -- C3 -- C4
  ↑                  ↑
 (*)               (main) 
 
+
+
+Level 7: ------------------------------------------------------------------------------------------------------------------
+
+Uso del ~: 
+
+Ejemplo, el de arriba, pero ahora queremos pasar el HEAD al C1 con un solo comando, no como arriba que usamos varios: 
+
+C1 -- C2 -- C3 -- C4 
+                   ↑
+                (main*) 
+
+"git checkout HEAD~3": 
+
+ C1 -- C2 -- C3 -- C4 
+ ↑                  ↑
+(*)               (main) 
 
 
 
