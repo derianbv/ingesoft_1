@@ -18,6 +18,12 @@ A -- B -- c (MAIN, HEAD) -> git commit -> A -- B -- C -- D (MAIN*). Luego, si cr
 1.2. HEAD ("*", Puntero a puntero rama o a commit): Head es un puntero que apunta a branches: HEAD -> branch1  (Commit) -> Commit 4. Esto indica hacia cual de las ramas va a crecer el historial  
 C: A -- B -- C -- D (MAIN*, jose)
 
+
+Si es HEAD -> COMMIT: 
+-Significa que detachamos el HEAD de alguna rama y lo pusimos en un COMMIT, si queremos hacer "git checkout COMMIT" en realidad tenemos que poner el Hash el commit en específico: 
+"git checkout JAjkJ29Aj9D"
+
+
 -EJEMPLO:
 
 [commit A] ← [commit B] ← [commit C] ← Main* 
