@@ -1,3 +1,4 @@
+
 eLink: https://learngitbranching.js.org/?locale=es_ES&NODEMO= 
 
 
@@ -178,11 +179,25 @@ C1 -- C2 -- C3 -- C4
                    ↑
                 (main*) 
 
-"git checkout main^^": entonces el Head se va a ir al COMMIT abuelo (hay 2 ^)  de main: 
+"git checkout main^^": entonces el Head se va a ir al COMMIT abuelo (abuelo porque hay 2 ^)  de main: 
 
 
+C1 -- C2 -- C3 -- C4 
+       ↑           ↑
+      (*)        (main) 
+
+-también podemos usar esta notación relativa al HEAD: 
 
 
+C1 -- C2 -- C3 -- C4 
+       ↑           ↑
+      (*)        (main) 
+
+"git checkout HEAD^": 
+
+ C1 -- C2 -- C3 -- C4 
+ ↑                  ↑
+(*)               (main) 
 
 
 
