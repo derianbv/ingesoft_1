@@ -219,3 +219,14 @@ C1 -- C2 -- C3 -- C4
 
 
 
+-Podemos mover ramas a ciertas posiciones usando esta notación (-f): 
+
+C1 -- C2 -- C3 -- C4 
+                   ↑
+                (main*) 
+
+"git branch -f main HEAD~3": 
+
+ C1 -- C2 -- C3 -- C4 
+ ↑                  ↑
+(main)             (*) 
