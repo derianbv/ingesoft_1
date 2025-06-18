@@ -15,7 +15,7 @@ Cuando realizo nuevos commits entonces voy a ir creando un historial de checkpoi
 
 A -- B -- c (MAIN, HEAD) -> git commit -> A -- B -- C -- D (MAIN*). Luego, si creo una nueva branch ("git branch jose") significa que hay dos punteros apuntando a C: A -- B -- C -- D (MAIN*, jose).
 
-1.2. HEAD ("*", Puntero a puntero rama): Head es un puntero que apunta a branches: HEAD -> branch1 -> Commit 4. Esto indica hacia cual de las ramas va a crecer el historial  
+1.2. HEAD ("*", Puntero a puntero rama o a commit): Head es un puntero que apunta a branches: HEAD -> branch1  (Commit) -> Commit 4. Esto indica hacia cual de las ramas va a crecer el historial  
 C: A -- B -- C -- D (MAIN*, jose)
 
 -EJEMPLO:
@@ -154,6 +154,7 @@ C1 -- C2 -- C3 ------- C6 <- (main)
 En ambos ejemplos C5' ==  C7 
 
 
+Level 5: ------------------------------------------------------------------------------------------------------------------
 
 
 
