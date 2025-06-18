@@ -104,7 +104,7 @@ C1 -- C2 -- C3 -------- C6 <-(main)
 
 
 
-🔹 3.3. Fast-forward merge (sin nuevo commit) adelantado jala al atrasado. 
+3.3. Fast-forward merge (sin nuevo commit) adelantado jala al atrasado. 
 Acá como el pequeño no ha avanzado y sigue un mismo camino, entonces, solo se cambia el puntero atrazado al adelantado. 
 
 C1 -- C2 -- C3 <-(main)
@@ -230,3 +230,7 @@ C1 -- C2 -- C3 -- C4
  C1 -- C2 -- C3 -- C4 
  ↑                  ↑
 (main)             (*) 
+
+
+
+
