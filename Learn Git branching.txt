@@ -219,7 +219,7 @@ C1 -- C2 -- C3 -- C4
 
 
 
--Podemos mover ramas a ciertas posiciones usando esta notación (-f): 
+-Podemos mover ramas a ciertas posiciones usando esta notación (-f), siempre referenciando al HEAD, nada de "git branch -f func1~3 -> checkou func1 y head~3": 
 
 C1 -- C2 -- C3 -- C4 
                    ↑
