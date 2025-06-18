@@ -21,7 +21,7 @@ C: A -- B -- C -- D (MAIN*, jose)
 
 Si es HEAD -> COMMIT: 
 -Significa que detachamos el HEAD de alguna rama y lo pusimos en un COMMIT, si queremos hacer "git checkout COMMIT" en realidad tenemos que poner el Hash el commit en específico: 
-"git checkout JAjkJ29Aj9D"
+"git checkout JAjkJ29Aj9D" para ver los hashes se usa "git log" 
 
 
 -EJEMPLO:
