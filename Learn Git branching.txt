@@ -232,9 +232,17 @@ C1 -- C2 -- C3 -- C4
 (main)             (*) 
 
 
+También puedo mover ramas independientemente, sabiendo el commit al que quiero ir con su HASH: 
 
 
-Level 7: ------------------------------------------------------------------------------------------------------------------
+git log: Ver los HASHES. 
+
+git branch -f main hash1234
+
+
+main va a puntar a hash1234 que es un commit.  
+
+Level 8: ------------------------------------------------------------------------------------------------------------------
 
 
 
