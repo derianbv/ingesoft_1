@@ -286,3 +286,8 @@ C1 -- C2 -- C3 -- C4 -- C4'
 | ¿Deshace cambios?                | Sí, puede borrar commits por completo                  | Sí, pero lo hace de forma explícita y trazable                  |
 | ¿Se puede usar en producción?    | Solo si estás trabajando solo o con ramas locales      | Sí, es el método recomendado para revertir en ramas compartidas |
 
+
+
+
+
+Level 9: ------------------------------------------------------------------------------------------------------------------
