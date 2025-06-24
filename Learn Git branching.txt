@@ -247,8 +247,8 @@ Level 8: -----------------------------------------------------------------------
 REVERTIR CAMBIOS: 
 1. git revert, 2. git reset: 
 
-2. git reset: 
-Mueve el puntero chekado un commit atrás, o sea el último queda a la deriva: 
+2. git reset (USARLO LOCALMENTE)   
+Mueve el puntero chekado un commit atrás, o sea el último queda a la deriva, en terminos practicos borra el último commit a lo malecho: 
 
 C1 -- C2 -- C3 -- C4 
                    ↑
@@ -260,4 +260,29 @@ C1 -- C2 -- C3 -- C4
 C1 -- C2 -- C3 -- C4 
             ↑
          (main*) 
+
+1. git revert (USARLO COMPARTIDO): 
+Crea un nuevo commmit que revierte los cambios hechos en el Commit previo, así mantiene el historial intacto. 
+
+C1 -- C2 -- C3 -- C4 
+                   ↑
+                (main*) 
+
+"git revert HEAD" 
+
+C1 -- C2 -- C3 -- C4 -- C4'
+                         ↑
+                      (main*) 
+
+
+
+
+
+| Característica                   | `git reset`                                            | `git revert`                                                    |
+| -------------------------------- | ------------------------------------------------------ | --------------------------------------------------------------- |
+| ¿Qué hace?                       | Mueve la rama y **borra el historial** (si es forzado) | Crea un commit nuevo que "deshace" otro commit                  |
+| ¿Afecta el historial?            | Sí, **reescribe el historial**                         | No, mantiene el historial intacto                               |
+| ¿Es seguro en repos compartidos? | ❌ No seguro (puede romper el historial compartido)     | ✅ Seguro (historia lineal, sin sobrescribir)                    |
+| ¿Deshace cambios?                | Sí, puede borrar commits por completo                  | Sí, pero lo hace de forma explícita y trazable                  |
+| ¿Se puede usar en producción?    | Solo si estás trabajando solo o con ramas locales      | Sí, es el método recomendado para revertir en ramas compartidas |
 
