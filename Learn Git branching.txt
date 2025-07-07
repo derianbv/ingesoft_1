@@ -1,7 +1,7 @@
 
 eLink: https://learngitbranching.js.org/?locale=es_ES&NODEMO= 
 
-
+**************************************************************** LOCALES O SINGLE PLAYER *********************************************************************
 eLevel 1: ----------------------------------------------------------------------------------
 -Los commits son snapshots del archivo en ese instante: checkpoints
 -Los commits se guardan en el historial de commits.
