@@ -318,6 +318,7 @@ C1 -- C2 -- C3 -- C4 -- C5 -- C6 <-(main*)
     PARED 
 con el head~4 digo que voy a setear la pared en el commit actual + 4 hacíá atrás, lo que significa que voy a agarrar a todos los commits del camino menos al de la pared, luego voy a poder entrar a un editor de los commits, puedo cambiarlos de orden o dejar de incluir un git, cuando haga cambios van a salir desde el commit pared en adelante como commits primos: C4'. 
 
+Luego de ordenarse o gestionarse de nueva manera, me quedo con una línea de Cn'y los commits pasados mueres (se vuelven opacos), nadie apunta a ellos
 
 
 Level 11: --------------------------------------------------------------------------------------------------------------------
