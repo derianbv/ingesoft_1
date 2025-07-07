@@ -291,3 +291,18 @@ C1 -- C2 -- C3 -- C4 -- C4'
 
 
 Level 9: ------------------------------------------------------------------------------------------------------------------
+CHERRY-PICK: 
+EPP: sirve para implementar commits epecificos en la rama en la que estoy (solo eso) y se copian como nuevos commits, git cherry-pick C1, ..., Cn: 
+Ejemplo: 
+
+C1 -- C2 -- C3 -- C6 <-- (main*)                           
+              \                                              
+              C4 -- C5 -- C7 (func1)    
+
+parado en main, hago 'git cherry-pick C5': 
+
+C1 -- C2 -- C3 -- C6 -- C5'<-- (main*)                           
+              \                                              
+              C4 -- C5 -- C7 (func1)    
+
+en este caso agrega ese commit en específico como uno nuevo
