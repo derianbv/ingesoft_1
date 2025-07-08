@@ -452,7 +452,7 @@ C1 - - C2 - -C3 - -C6 (main)
 
 
 En este caso en específico podemos hace checkout de este origen/main que se creó (que es aparte de el main original que ya tenía), OJO: Esta rama solo se va a mover cuando se actualice el remoto, si trato de meterle un commit, git va a detachear la HEAD y moverse independiente del origen/main: 
-
+origen/rama se crea para todas las ramas que tenga el repo original, no solo para la rama main
 
 repo PC1: 
 C1──C2──C3───C6 <- (origen/main, main)  
