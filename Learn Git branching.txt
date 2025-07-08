@@ -1,8 +1,8 @@
 
-
 eLink: https://learngitbranching.js.org/?locale=es_ES&NODEMO= 
 
 **************************************************************** LOCALES O SINGLE PLAYER *********************************************************************
+
 eLevel 1: ----------------------------------------------------------------------------------
 -Los commits son snapshots del archivo en ese instante: checkpoints
 -Los commits se guardan en el historial de commits.
@@ -406,3 +406,24 @@ C1──C2──C3───C6   ← main
 
 Level 17: --------------------------------------------------------------------------------------------------------------------
 TIRAR MAGIA: DONE B) 
+
+
+
+**************************************************************** REMOTE O MUTIPLAYER PLAYER *********************************************************************
+eLevel 1: ----------------------------------------------------------------------------------
+
+Los gits remotos en realidad son almacenamiento de información, quiere decir que el proyecto es como una película, y yo la bajo en mi pc entonces ahora está guardado ahí para la posteridad. 
+En esencia se trata de comunicarse con otro pc. 
+
+-GIT CLONE: 
+Copiar un repositorio remoto a local  
+
+
+repo PC1: 
+C1──C2──C3───C6 
+
+"git clone" 
+
+repo PC2: 
+
+C1 - - C2 - -C3 - -C6 
