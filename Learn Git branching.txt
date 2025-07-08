@@ -431,8 +431,6 @@ C1 - - C2 - -C3 - -C6
 
 Level 2: ----------------------------------------------------------------------------------
 
-
-
 -GIT CLONE: 
 Copiar un repositorio remoto a local, en este caso, github crea una nueva rama en el repositorio remoto (nube) como especie de etiqueta para remarcar en dónde había quedado el proyecto justo antes de que fuera clonado. 
 
@@ -451,6 +449,7 @@ repo PC2:
 C1 - - C2 - -C3 - -C6 (main)  
 
 
+ORIGEN: 
 En este caso en específico podemos hace checkout de este origen/main que se creó (que es aparte de el main original que ya tenía), OJO: Esta rama solo se va a mover cuando se actualice el remoto, si trato de meterle un commit, git va a detachear la HEAD y moverse independiente del origen/main: 
 origen/rama se crea para todas las ramas que tenga el repo original, no solo para la rama main
 
@@ -470,6 +469,7 @@ C1──C2──C3───C6--C7 <- (HEAD*)
              ↑ 
        (origen/main) 
 
+EPP: Origen es como el recuerdo de cómo estaba el repositorio cuando lo cloné, en realidad es la copia local de la posicion del main remoto al momento de clonar (no maneja internet, es solo un recuerdo), a la hora de realizar fetch que es como stalkear, entonces voy a mirar los commits nuevos (que hacen otras personas con push) y miro en dónde va el main remoto, si este cambio entonces debo actualizar el estado de mi recuerdo (manejado por o/main) y moverlo las posiciones que ha avanzado, eso lo hace automáticamente el git cuando un fetch. 
 
 Digamos que tengo: ------------------------------------------------
 
@@ -490,7 +490,7 @@ repo PC2:
 C1 - - C2 - -C3 - -C4 --C8 -- C10 (main)  
 
 Level 2: ---------------------------------------------------------------------------------
-GIT FETCH:  
+GIT FETCH (STALEKAR):  
 
 Es como decir, estoy en mi repo local sano y quiero ver qué nuevo ha pasado en el repo remoto,
 entonces hago git fetch para traer los cambios a mi pc y poder analizar si me conviene implementarlos con git log. 
