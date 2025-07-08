@@ -345,4 +345,36 @@ esto pone una marca a C2 de pepito, lo puedo checkear pero entro solo con la cab
 
 
 Level 14: --------------------------------------------------------------------------------------------------------------------
+GIT  DESCRIBE: 
+
+Diagrama de ejemplo
+===================
+
+           C4--C5--C7           <- func1
+          /
+C1--C2--C3--C6--C5'             <- main (HEAD)
+        |
+        v1.0 (tag)
+
+• v1.0 etiqueta el commit C3.
+• main avanzó a C6 y luego se reescribió en C5'.
+• func1 se bifurcó en C3 y continuó con commits propios.
+git describe en main (HEAD en C5'):
+
+'git describe'
+v1.0_2_g<hashC5'>
+– Significa: “dos commits por encima de v1.0, en el hash C5'”.
+
+git describe en func1 (HEAD en C7): 
+
+git checkout func1
+git describe:
+
+v1.0_3_g<hashC7>
+– Significa: “tres commits por encima de v1.0, en el hash C7”.
+
+
+
+
+
 
