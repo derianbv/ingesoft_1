@@ -492,3 +492,9 @@ C1 - - C2 - -C3 - -C4 --C8 -- C10 (main)
 Level 2: ---------------------------------------------------------------------------------
 GIT FETCH:  
 
+Es como decir, estoy en mi repo local sano y quiero ver qué nuevo ha pasado en el repo remoto,
+entonces hago git fetch para traer los cambios a mi pc y poder analizar si me conviene implementarlos con git log. 
+Luego si sí me conviene entonces debo hacer un merge. 
+
+EPP: Observo lo nuevo que hay en el repo remoto
+
