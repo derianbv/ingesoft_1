@@ -538,4 +538,7 @@ git push:
 TODO SUBE, origin/main a la ultima rama (que se subio) y el repo remoto tambien agarra los commits que le pasamos y mueve la rama l final. 
 
 
+Level 7: ---------------------------------------------------------------------------------
 
+Que pasa si quiero hacer un push a algo desactualizado (que le han metido mano otras perosnas)? 
+SOL: 
