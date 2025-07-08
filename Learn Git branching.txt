@@ -341,9 +341,6 @@ git tag pepito C2
 esto pone una marca a C2 de pepito, lo puedo checkear pero entro solo con la cabeza, y si hago checkouts el tag no se mueve, solo salen commits solitos. 
 
 
-
-
-
 Level 14: --------------------------------------------------------------------------------------------------------------------
 GIT  DESCRIBE: 
 
@@ -373,6 +370,8 @@ git describe:
 v1.0_3_g<hashC7>
 – Significa: “tres commits por encima de v1.0, en el hash C7”.
 
+
+Level 15: --------------------------------------------------------------------------------------------------------------------
 
 
 
