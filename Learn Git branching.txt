@@ -565,13 +565,52 @@ C1 -- C2 -- C4 <-- (main)
 LOCAL: 
 
 C1 -- C2 -- C3 <-- (bugFix) 
-            ↑
-      (main/origin)   
+      ↑
+(main/origin)   
 
 si yo ahora trato de hacer un push, no voy a poder porque va a tratar de subir C3 pero el padre de C3 QUE ES C2 ahora tiene otro hijo que es C4, recuerda que las ramas solo pueden seguir una sola línea. 
 ERROR: Fast foward 
 
+La manera de solucionarlo tiene mucho sentido: 
 
+hay que: 1. traer los nuevos cambios "git fetch":
+
+REMOTO: 
+
+C1 -- C2 -- C4 <-- (main)
+
+LOCAL: 
+
+C1 -- C2 -- C3 -- C4 <-- (origin/main) 
+            ↑
+         (bugFix)   
+
+
+1. rebasar la rama que quería subir (C3) para que ahora el papá sea el COMMIT que me había quitado el puesto (C4) "git rebase origin/main": 
+
+
+
+REMOTO: 
+
+C1 -- C2 -- C4 <-- (main)
+
+LOCAL: 
+
+C1 -- C2 -- C4 -- C3'  <-- (origin/main) 
+                   ↑
+                (bugFix)   
+
+Ahora que el commit que quiero subir sí es hijo de último presente en el REMOTO, sí lo puedo pushear con git push: 
+
+REMOTO: 
+
+C1 -- C2 -- C4 -- C3' <-- (main)
+
+LOCAL: 
+
+C1 -- C2 -- C4 -- C3'  <-- (origin/main) 
+                   ↑
+                (bugFix)   
 
 
 
