@@ -431,3 +431,42 @@ C1 - - C2 - -C3 - -C6
 
 Level 2: ----------------------------------------------------------------------------------
 
+
+
+-GIT CLONE: 
+Copiar un repositorio remoto a local, en este caso, github crea una nueva rama en el repositorio remoto (nube) como especie de etiqueta para remarcar en dónde había quedado el proyecto justo antes de que fuera clonado. 
+
+
+repo PC1: 
+C1──C2──C3───C6 <- (main)       
+
+"git clone" 
+
+
+repo PC1: 
+C1──C2──C3───C6 <- (origen/main)  
+
+repo PC2: 
+
+C1 - - C2 - -C3 - -C6 (main)  
+
+
+En este caso en específico podemos hace checkout de este origen/main, OJO: Esta rama solo se va a mover cuando se actualice el remoto, si trato de meterle un commit, git va a detachear la HEAD y moverse independiente del origen/main: 
+
+
+repo PC1: 
+C1──C2──C3───C6 <- (origen/main)  
+
+"git checkout origen/main" 
+
+C1──C2──C3───C6 <- (origen/main) 
+              ↑  
+           (HEAD*) 
+
+"git commit" 
+
+
+C1──C2──C3───C6--C7 <- (HEAD*) 
+             ↑ 
+       (origen/main) 
+
