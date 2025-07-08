@@ -451,15 +451,15 @@ repo PC2:
 C1 - - C2 - -C3 - -C6 (main)  
 
 
-En este caso en específico podemos hace checkout de este origen/main, OJO: Esta rama solo se va a mover cuando se actualice el remoto, si trato de meterle un commit, git va a detachear la HEAD y moverse independiente del origen/main: 
+En este caso en específico podemos hace checkout de este origen/main que se creó (que es aparte de el main original que ya tenía), OJO: Esta rama solo se va a mover cuando se actualice el remoto, si trato de meterle un commit, git va a detachear la HEAD y moverse independiente del origen/main: 
 
 
 repo PC1: 
-C1──C2──C3───C6 <- (origen/main)  
+C1──C2──C3───C6 <- (origen/main, main)  
 
 "git checkout origen/main" 
 
-C1──C2──C3───C6 <- (origen/main) 
+C1──C2──C3───C6 <- (origen/main, main) 
               ↑  
            (HEAD*) 
 
@@ -470,3 +470,21 @@ C1──C2──C3───C6--C7 <- (HEAD*)
              ↑ 
        (origen/main) 
 
+
+Digamos que tengo: ------------------------------------------------
+
+repo PC1: 
+C1──C2──C3───C4 <- (origen/main, main)  
+
+luego lo clono 
+repo PC2: 
+
+C1 - - C2 - -C3 - -C4 (main)  
+
+y hago un git commit con el head en el main del de la nube (remoto) o el otro, se van alternando de número creciente: 
+
+repo PC1: 
+C1──C2──C3───C4 -- C7 -- C9 <- (origen/main, main)  
+repo PC2: 
+
+C1 - - C2 - -C3 - -C4 --C8 -- C10 (main)  
