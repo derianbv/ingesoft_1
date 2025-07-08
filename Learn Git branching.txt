@@ -218,8 +218,7 @@ C1 -- C2 -- C3 -- C4
 (*)               (main) 
 
 
-
--Podemos mover ramas a ciertas posiciones usando esta notación (-f), siempre referenciando al HEAD, nada de "git branch -f func1~3 -> checkou func1 y main head~3": 
+Podemos mover una rama a una posición concreta con la opción -f, pero siempre tomando como referencia HEAD. Nada de git branch -f func1~3; primero haz git checkout func1 y luego git branch -f main HEAD~3.
 
 C1 -- C2 -- C3 -- C4 
                    ↑
