@@ -5,7 +5,7 @@ eLink: https://learngitbranching.js.org/?locale=es_ES&NODEMO=
 
 eLevel 1: ----------------------------------------------------------------------------------
 -Los commits son snapshots del archivo en ese instante: checkpoints
--Los commits se guardan en el historial de commits.
+-Los commits se guardan en el historial de commits.e
 -Las branches son solo punteros a commits especificos: 
 
 CÓMO FUNCIONA GIT: 
@@ -615,5 +615,6 @@ C1 -- C2 -- C4 -- C3'  <-- (origin/main)
 
 Puedo hacer todo lo de arriba con una línea:  git pull --rebase (jala y pone mis commins encima de lo que jaló); git push 
 Todo esto también se puede hacer con merge metiendole magía. 
+O EEP: se puede hacer realizando un git pull (crea un merge de la rama que me quito el lugar y la que quería subir); git push 
 
 
