@@ -542,3 +542,37 @@ Level 7: -----------------------------------------------------------------------
 
 Que pasa si quiero hacer un push a algo desactualizado (que le han metido mano otras perosnas)? 
 SOL: 
+
+1. hay: 
+
+REMOTO: 
+
+C1 -- C2 <-- (main)
+
+LOCAL: Considera que el papdre de C3 es C2 
+
+C1 -- C2 -- C3 <-- (bugFix) 
+            ↑
+      (main/origin)   
+
+
+2. Luego algún compañero pushea algo al REMOTO: 
+
+REMOTO: 
+
+C1 -- C2 -- C4 <-- (main)
+
+LOCAL: 
+
+C1 -- C2 -- C3 <-- (bugFix) 
+            ↑
+      (main/origin)   
+
+si yo ahora trato de hacer un push, no voy a poder porque va a tratar de subir C3 pero el padre de C3 QUE ES C2 ahora tiene otro hijo que es C4, recuerda que las ramas solo pueden seguir una sola línea. 
+ERROR: Fast foward 
+
+
+
+
+
+
