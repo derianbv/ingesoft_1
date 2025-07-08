@@ -26,6 +26,9 @@ Si es HEAD -> COMMIT:
 "git checkout fed2da64c0efc5293610bdd892f82a58e8cbc5d8" para ver los hashes se usa "git log"  o ya con "git checkout fed2" git hub debería reconocerlo 
 
 
+OJO: puedo crear nuevos ramas de una haciendo checkout para ponerlas en donde yo queiera de una vez: 
+git checkout -b ramaNueva CommitADondeQuieroIR
+
 -EJEMPLO:
 
 [commit A] ← [commit B] ← [commit C] ← Main* 
