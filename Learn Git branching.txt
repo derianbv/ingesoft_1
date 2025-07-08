@@ -486,10 +486,10 @@ C1 - - C2 - -C3 - -C4 <- (origen/main, main)
 y hago un git commit con el head en el main del de la nube (remoto) o el otro, se van alternando de número creciente, es decir que no pueden existir dos C1 o dos C2 etc., la persona que haga ese commit primero se queda con el numero: 
 
 repo PC1: 
-C1──C2──C3───C4 -- C7 -- C9 <- (origen/main, main)  
+C1──C2──C3───C4 -- C7 -- C9 <- (main) 
 repo PC2: 
 
-C1 - - C2 - -C3 - -C4 --C8 -- C10 (main)  
+C1 - - C2 - -C3 - -C4 --C8 -- C10 <- (origen/main, main)  
 
 Level 2 y 3: ---------------------------------------------------------------------------------
 GIT FETCH (STALEKAR):  
@@ -505,4 +505,24 @@ FETCH REALIZA:
 2. Mira los commits nuevos que tenga el repo y los descarga en mi repo local (en esencia, pone los commits despues del que estoy trabajando, pero no actualiza la rama actual local, lo cual deja a los commits como fantasmas hasta que yo decida si quiero ir a ellos o no, utilizando un merge o algo así) s
 
 
+EJEMPLO DE GIT FETCH: 
+1.
+C1 - - C2 - -C3 - -C4 --C8 -- C10 <- (origen/main, main*)  
+
+2. 
+"git fetch"
+C1 - - C2 - -C3 - -C4 --C8 -- C10 -- C11 --C12 -- C3 <- (origen/main) 
+                               ↑
+                            (main*)
+
+En este caso origen apunta los nuevos cambios, pero no entran en vigor, para hacerlos entrar en vigor: 
+"git merge origen/main": 
+
+C1 - - C2 - -C3 - -C4 --C8 -- C10 -- C11 --C12 -- C3 <- (origen/main, main*) 
+
+
+
+
+
 Level 4: ---------------------------------------------------------------------------------
+GIT PULL: 
