@@ -533,9 +533,9 @@ MAGIA
 
 
 Level 6: ---------------------------------------------------------------------------------
-MAGIA 
+git push: 
 
-
+TODO SUBE, origin/main a la ultima rama (que se subio) y el repo remoto tambien agarra los commits que le pasamos y mueve la rama l final. 
 
 
 
