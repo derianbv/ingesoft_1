@@ -291,7 +291,7 @@ C1 -- C2 -- C3 -- C4 -- C4'
 
 
 Level 9: ------------------------------------------------------------------------------------------------------------------
-CHERRY-PICK: traer un commit y ya, xd robarlo del deck 
+CHERRY-PICK: traer un commit y ya, xd robarlo del deck, pero OJO, solo puedo traer de otra rama, nada de padres directos. 
 EPP: sirve para implementar commits epecificos en la rama en la que estoy (solo eso) y se copian como nuevos commits, git cherry-pick C1, ..., Cn: 
 Ejemplo: 
 
