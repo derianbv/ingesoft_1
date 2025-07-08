@@ -382,7 +382,25 @@ REBASE CON DOS ARG:
 
 
 Level 16: --------------------------------------------------------------------------------------------------------------------
+checkout papá si hay 2 y uso posicionamiento relativo (al HEAD): 
 
+si tenemos este caso en donde los papas de C7 son C5 Y C6
 
+C1 -- C2 -- C3 ------- C6 <- (main)                           
+              \          \                                    
+              C4 -- C5 -- C7 <- (func1*) 
 
+si hago: 'git checkout HEAD~1' pues no sabe porque tiene dos papas, entonces podemos enumerarlos e ir al ^n: 
+
+HEAD^1 → C5 porque acá se hizo el merge
+
+HEAD^2 → C6 y este se trajo con el merge
+
+git checkout HEAD^1 
+
+C1──C2──C3───C6   ← main
+        \      \
+         C4──C5─C7   ← func1
+             ↑
+            HEAD (detached)
 
