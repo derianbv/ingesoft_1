@@ -322,5 +322,19 @@ Luego de ordenarse o gestionarse de nueva manera, me quedo con una línea de Cn'
 
 
 Level 11: --------------------------------------------------------------------------------------------------------------------
+AMEND: corregir errorsitos, tipo, al ultimo commit le saco un commit nuevo y descarto el anterior.
+"git commit --amend"
+
+
+C1 -- C2 -- C3 -- C6
+
+"git commit --amend"
+
+C1 -- C2 -- C3 -- C6' 
+
+y C6 murió :( 
+
+
+
 
 
