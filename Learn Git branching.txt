@@ -613,5 +613,7 @@ C1 -- C2 -- C4 -- C3'  <-- (origin/main)
                 (bugFix)   
 
 
+Puedo hacer todo lo de arriba con una línea:  git pull --rebase (jala y pone mis commins encima de lo que jaló); git push 
+Todo esto también se puede hacer con merge metiendole magía. 
 
 
