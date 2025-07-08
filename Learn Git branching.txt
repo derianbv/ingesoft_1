@@ -618,3 +618,113 @@ Todo esto también se puede hacer con merge metiendole magía.
 O EEP: se puede hacer realizando un git pull (crea un merge de la rama que me quito el lugar y la que quería subir); git push 
 
 
+EXPLICACION DE CONFLICTOS DE GIT: --------------------------------------------------------------
+Se parte de la idea de que git pull --rebase coge tus cambios y los pone de hijos de los cambios que hicieron los otros, entonces tus cambios deberían basarse en los cambios que hicieron los otros, git analiza esto para poder subir los cambios de la mejor manera mezclando los códigos, la manera en que lo realiza es la siguiente: 
+
+Ahora una explicación detallada de Gepeto: 
+
+✅ ¿Qué hace Git al hacer un rebase (o merge)?
+ Git compara tres versiones:
+    🟡 El punto base común (donde ambas ramas se separaron).
+
+    🔵 Tu versión local (con tus cambios).
+    
+    🔴 La versión remota (con los cambios de tu compañero).
+
+🤖 ¿Cómo decide si puede mezclar los cambios automáticamente?
+    ✅ Si los cambios están en partes diferentes del archivo:
+    Git los mezcla automáticamente.
+    No te pregunta nada.
+
+📄 Ejemplo:
+// archivo.txt antes (en C2)
+1: nombre = "Juan"
+2: edad = 20
+3: ciudad = "Lima"
+
+// tu compañero cambió línea 1
+1: nombre = "Laura"
+
+// vos cambiaste línea 3
+3: ciudad = "Bogotá"
+
+✔️ Como los cambios son en líneas diferentes, Git los une sin problema.
+
+
+❌ Si ambos cambiaron la misma línea:
+    Git no puede decidir solo.
+    Entonces aparece un conflicto y te dice:
+    “Ambos cambiaron la misma parte. ¿Cuál querés dejar?”
+
+// archivo.txt antes (C2)
+1: nombre = "Juan"
+
+// cambio remoto
+1: nombre = "Laura"
+
+// cambio tuyo
+1: nombre = "Carlos"
+
+👀 Git no sabe si dejar "Laura" o "Carlos", así que te muestra esto en el archivo:
+
+<<<<<<< HEAD
+nombre = "Carlos"
+=======
+nombre = "Laura"
+>>>>>>> origin/main
+
+Tenés que editar manualmente y elegir o combinar, y luego marcar como resuelto.
+
+
+COMO SOLUCIONAR UN CONFLICTO: --------------------------------------------------------------------------------------------
+✅ ✅ ✅ ✅ OPCIÓN 1: Usar tu editor local (ej: VS Code, Sublime, etc.)
+    🛠️ 1. Git marca el conflicto en el archivo:
+    Supongamos que archivo.txt tiene conflicto. Git lo deja así:
+    
+    
+    <<<<<<< HEAD
+    nombre = "Carlos"
+    =======
+    nombre = "Laura"
+    >>>>>>> origin/main
+    
+    Lo que está entre <<<<<<< HEAD y ======= es tu cambio local.
+    Lo que está entre ======= y >>>>>>> origin/main es el cambio remoto.
+    
+    ✏️ 2. Vos editás el archivo y dejás solo lo que querés, por ejemplo:
+
+    nombre = "Carlos y Laura"
+    o simplemente elegís uno de los dos:
+    
+
+    nombre = "Laura"
+    ✅ 3. Luego, le decís a Git que resolviste:
+
+    git add archivo.txt
+    git rebase --continue   # si estabas haciendo rebase
+    # o
+    git merge --continue    # si estabas haciendo merge
+
+✅✅✅✅   OPCIÓN 2: Usar Visual Studio Code (lo más fácil visualmente)
+    Si tenés instalado VS Code y abrís el repo con conflicto, te muestra algo así:
+    
+    🟦 Te deja elegir entre:
+    
+    "Accept Current Change" (tu cambio)
+    "Accept Incoming Change" (el remoto)
+    "Accept Both Changes"
+    Editar manualmente
+    
+    Luego hacés lo mismo: git add, git rebase --continue.
+    
+    ⚙️ Si querés que Git siempre abra VS Code cuando hay conflictos:
+    git config --global core.editor "code --wait"
+
+✅✅✅✅ OPCIÓN 3: Usar GitHub (solo para Pull Requests)
+    Cuando trabajás con Pull Requests en GitHub y hay conflictos:
+    GitHub te muestra un botón: "Resolve conflicts"
+    Ahí podés editar el archivo directamente desde el navegador.
+    Guardás y hacés commit desde ahí.
+    ❗️Esto solo funciona en GitHub cuando hacés PRs, no en tu máquina local.
+
+
