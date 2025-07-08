@@ -321,7 +321,7 @@ con el head~4 digo que voy a setear la pared en el commit actual + 4 hacíá atr
 Luego de ordenarse o gestionarse de nueva manera, me quedo con una línea de Cn'y los commits pasados mueres (se vuelven opacos), nadie apunta a ellos
 
 
-Level 11: --------------------------------------------------------------------------------------------------------------------
+Level 11 y 12: --------------------------------------------------------------------------------------------------------------------
 AMEND: corregir errorsitos, tipo, al ultimo commit le saco un commit nuevo y descarto el anterior.
 "git commit --amend"
 
@@ -335,5 +335,9 @@ C1 -- C2 -- C3 -- C6'
 y C6 murió :( 
 
 
-Level 12: --------------------------------------------------------------------------------------------------------------------
+Level 13: --------------------------------------------------------------------------------------------------------------------
+git tag pepito C2 
+
+esto pone una marca a C2 de pepito, lo puedo checkear pero entro solo con la cabeza, y si hago checkouts el tag no se mueve, solo salen commits solitos. 
+
 
