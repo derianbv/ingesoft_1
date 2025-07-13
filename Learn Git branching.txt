@@ -734,3 +734,19 @@ Level 9: -----------------------------------------------------------------------
 
 
 MAGIAAAA.  DONE B) 
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+
+GIT STASH: 
+
+es para hacer un back up del trabajo de mi rama, pero sin hacer un commit (mas discreto ps) 
+
+git stash:  se guarda todo lo que estoy haciendo, puedo ir a otra rama.
+
+Luego vuelvo: git stash pop y pum vuelve mi trabajo 
